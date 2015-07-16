@@ -1,4 +1,7 @@
 require 'sinatra/base'
+require 'dotenv'
+
+Dotenv.load(File.expand_path("../.env",  __FILE__))
 
 module ChatDemo
   class App < Sinatra::Base
